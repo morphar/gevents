@@ -1,15 +1,15 @@
 var util = require('util');
-var GEvents1 = require('./gevents.js');
-var GEvents2 = require('./gevents.js');
+var gEvents1 = require('./index.js');
+var gEvents2 = require('./index.js');
 
-GEvents1.on('bla', function() { console.log('bla', arguments); });
+gEvents1.on('bla', function() { console.log('bla', arguments); });
 
 setInterval(function() {
   
   if(!(process.pid % 2)) {
-    GEvents2.emit('bla', { some: 'data' }, 'bla', 'yadda');
+    gEvents2.emit('bla', { some: 'data' }, 'bla', 'yadda');
   } else {
-    GEvents2.globalEmit('bla', { some: 'data2' });
+    gEvents2.globalEmit('bla', { some: 'data2' });
   }
   
 }, 2000);
