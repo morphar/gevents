@@ -20,11 +20,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/morphar/gevents.git"
+    "url": "http://github.com/nosco/gevents.git"
   },
-  "github": "http://github.com/morphar/gevents",
+  "github": "http://github.com/nosco/gevents",
   "bugs": {
-    "url": "http://github.com/morphar/gevents/issues"
+    "url": "http://github.com/nosco/gevents/issues"
   },
   "license": "MIT",
   "main": "./index.js",
